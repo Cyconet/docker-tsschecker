@@ -1,7 +1,7 @@
 # Docker-Tsschecker
 
-[![](https://images.microbadger.com/badges/version/waja/project.svg)](https://hub.docker.com/r/waja/project/)
-[![](https://images.microbadger.com/badges/image/waja/project.svg)](https://hub.docker.com/r/waja/project/)
+[![](https://images.microbadger.com/badges/version/waja/tsschecker.svg)](https://hub.docker.com/r/waja/tsschecker/)
+[![](https://images.microbadger.com/badges/image/waja/tsschecker.svg)](https://hub.docker.com/r/waja/tsschecker/)
 [![Build Status](https://travis-ci.org/Cyconet/docker-tsschecker.svg?branch=development)](https://travis-ci.org/Cyconet/docker-tsschecker)
 [![Docker Build Status](https://img.shields.io/docker/build/waja/tsschecker.svg)](https://hub.docker.com/r/waja/tsschecker/)
 [![GitHub tag](https://img.shields.io/github/tag/Cyconet/docker-tsschecker.svg)](https://github.com/Cyconet/docker-tsschecker/tags)
