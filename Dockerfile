@@ -3,11 +3,11 @@ FROM debian:jessie-slim
 # Dockerfile Maintainer
 MAINTAINER Jan Wagner "waja@cyconet.org"
 
-ARG "BUILD_DATE=unknown"
-ARG "BUILD_VERSION=unknown"
-ARG "VCS_URL=unknown"
-ARG "VCS_REF=unknown"
-ARG "VCS_BRANCH=unknown"
+ARG BUILD_DATE
+ARG BUILD_VERSION
+ARG VCS_URL
+ARG VCS_REF
+ARG VCS_BRANCH
 
 ENV TSSCHECKER_VERSION 212
 
@@ -16,11 +16,11 @@ LABEL org.label-schema.name="tsschecker - powerfull tool to check tss signing st
     org.label-schema.description="tsschecker installation on Debian Jessie based container" \
     org.label-schema.vendor="Cyconet" \
     org.label-schema.schema-version="1.0" \
-    org.label-schema.build-date=$BUILD_DATE \
-    org.label-schema.version=$BUILD_VERSION \
-    org.label-schema.vcs-url=$VCS_URL \
-    org.label-schema.vcs-ref=$VCS_REF \
-    org.label-schema.vcs-branch=$VCS_BRANCH
+    org.label-schema.build-date="${BUILD_DATE:-unknown}" \
+    org.label-schema.version="${BUILD_VERSION:-unknown}" \
+    org.label-schema.vcs-url="${VCS_URL:-unknown}" \
+    org.label-schema.vcs-ref="${VCS_REF:-unknown}" \
+    org.label-schema.vcs-branch="${VCS_BRANCH:-unknown}"
 
 RUN apt-get update && apt-get -y upgrade && \
   apt-get -y install --no-install-recommends libcurl3 libusb-1.0-0 ca-certificates && \
